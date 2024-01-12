@@ -1,6 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
+using MichealsFirstMod.Patches;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,7 @@ namespace MichealsFirstMod
             mls.LogInfo("Micheal'sFirstMod has awaken");
 
             harmony.PatchAll(typeof(MichealsFirstModBase));
+            harmony.PatchAll(typeof(CostFixForSprayPaint));
         }
 
     }
