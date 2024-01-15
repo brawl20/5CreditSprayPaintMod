@@ -1,25 +1,25 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using MichealsFirstMod.Patches;
+using _5CreditSprayPaintMod.Patches;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MichealsFirstMod
+namespace _5CreditSprayPaintMod
 {
     [BepInPlugin(modGUID, modName, modVersion)]
-    public class MichealsFirstModBase : BaseUnityPlugin
+    public class _5CreditSprayPaintBaseMod : BaseUnityPlugin
     {
-        private const string modGUID = "Micheal.MichealsFirstMod";
-        private const string modName = "Micheal's_First_Mod";
-        private const string modVersion = "1.0.0.0";
+        private const string modGUID = "YellowGameDev.5CreditSprayPaintMod";
+        private const string modName = "5CreditSprayPaintMod";
+        private const string modVersion = "2.0.0.0";
 
         private readonly Harmony harmony = new Harmony(modGUID);
         
-        private static MichealsFirstModBase Instance;
+        private static _5CreditSprayPaintBaseMod Instance;
 
 
         internal ManualLogSource mls;
@@ -35,7 +35,7 @@ namespace MichealsFirstMod
 
             mls.LogInfo("Micheal'sFirstMod has awaken");
 
-            harmony.PatchAll(typeof(MichealsFirstModBase));
+            harmony.PatchAll(typeof(_5CreditSprayPaintBaseMod));
             harmony.PatchAll(typeof(CostFixForSprayPaint));
         }
 
