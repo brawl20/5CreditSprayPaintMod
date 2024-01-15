@@ -33,7 +33,7 @@ namespace _5CreditSprayPaintMod
 
             mls = BepInEx.Logging.Logger.CreateLogSource(modGUID);
 
-            mls.LogInfo("Micheal'sFirstMod has awaken");
+            mls.LogInfo("_5CreditSprayPaintMod has awaken");
 
             harmony.PatchAll(typeof(_5CreditSprayPaintBaseMod));
             harmony.PatchAll(typeof(CostFixForSprayPaint));
