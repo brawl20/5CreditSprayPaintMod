@@ -18,15 +18,15 @@ namespace _5CreditSprayPaintMod
         private const string modVersion = "2.0.0.0";
 
         private readonly Harmony harmony = new Harmony(modGUID);
-        
+
         private static _5CreditSprayPaintBaseMod Instance;
 
 
         internal ManualLogSource mls;
 
-        void Awake() 
+        void Awake()
         {
-            if (Instance == null) 
+            if (Instance == null)
             {
                 Instance = this;
             }
