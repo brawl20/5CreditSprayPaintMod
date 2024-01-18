@@ -37,6 +37,7 @@ namespace _5CreditSprayPaintMod
 
             harmony.PatchAll(typeof(_5CreditSprayPaintBaseMod));
             harmony.PatchAll(typeof(CostFixForSprayPaint));
+            harmony.PatchAll(typeof(InfiniteSprayPatch));
         }
 
     }
